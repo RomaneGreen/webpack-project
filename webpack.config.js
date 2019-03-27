@@ -1,5 +1,4 @@
 
-
 module.exports = {
     entry: [
         './src/index.js'
@@ -13,11 +12,18 @@ module.exports = {
         contentBase: './dist'
     },
     module: {
-        rules: [
+         rules: [ {
             text: /\.(.js|.jsx)$/,
             exclude: /node_modules/,
             use: ['babel-loader']
-        ]
+          },
+          {
+            text: /\.(.js|.jsx)$/,
+            exclude: /node_modules/,
+            use: ['eslint-loader']
+          }
+         ]
+       
     },
     resolve:{
         extensions: ['js','jsx']
