@@ -1,2 +1,2 @@
 
-console.log("webpack boss")
+console.log("webpack boss");

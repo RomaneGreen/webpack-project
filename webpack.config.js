@@ -13,12 +13,12 @@ module.exports = {
     },
     module: {
          rules: [ {
-            text: /\.(.js|.jsx)$/,
+            text: /\.(js|jsx)$/,
             exclude: /node_modules/,
             use: ['babel-loader']
           },
           {
-            text: /\.(.js|.jsx)$/,
+            text: /\.(js|jsx)$/,
             exclude: /node_modules/,
             use: ['eslint-loader']
           }
@@ -26,6 +26,6 @@ module.exports = {
        
     },
     resolve:{
-        extensions: ['js','jsx']
+        extensions: ['.js','.jsx']
     }
 }
